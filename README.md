@@ -1,9 +1,8 @@
 # Risk-Aware Sensor Placement Under Capability Uncertainty
 
-The baseline (Kim et al., SysCon 2025) proposes sensors placement to maximize void probability $\nu$ assuming each sensor's
+The baseline (Kim et al., SysCon 2025) places sensors to maximize void probability $\nu$, assuming each sensor's
 detection capability $\rho_i$ is known. This study models $\rho_i \sim \mathcal{N}(\mu_i, \sigma_i^2)$
-and computes the result with capability uncertainty. The mean-optimal
-placement is the same as the baseline. The risk-aware planner holds the downside flat where the nominal planner
+and asks whether that uncertainty changes the placement. It does not move the mean-optimal placement. It moves the tail. The risk-aware planner holds the downside flat where the nominal planner
 degrades, and the gap has a closed form as seen in the simulation results.
 
 ## The loop
@@ -38,7 +37,7 @@ probability is the worst-case detection the placement guarantees under the belie
 | 0.0210 | 0.32489 | 0.32824 | +0.00334 |
 
 ## Reproduce
-
+Approx. 2min run. Regenerates figures/ and prints both tables;
 ```bash
 pip install -r requirements.txt
 python sensor_placement.py
