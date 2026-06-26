@@ -1,6 +1,6 @@
 # Risk-Aware Sensor Placement Under Capability Uncertainty
 
-Kim et al. (SysCon 2025) place sensors to maximize void probability $\nu$ assuming each sensor's
+The baseline (Kim et al., SysCon 2025) proposes sensors placement to maximize void probability $\nu$ assuming each sensor's
 detection capability $\rho_i$ is known. This study models $\rho_i \sim \mathcal{N}(\mu_i, \sigma_i^2)$
 and computes the result with capability uncertainty. The mean-optimal
 placement is the same as the baseline. The risk-aware planner holds the downside flat where the nominal planner
